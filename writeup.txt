@@ -1,0 +1,29 @@
+test cases:
+ls
+mkdir temp
+ls temp
+mkdir -v
+cd temp
+ls
+mkdir temp
+rm temp
+pwd
+echo "hello from temp"
+history
+history -c
+exit
+
+
+
+program flow:
+
+I have run a infinite while loop to take commands continously.
+I have taken the command in a char array 'command' and split by space using strtok.
+Then Saved all the splitted word of the command into and array 'commands'.
+After that I check for which command is requested and handled the cases by using if statements.
+Each command can take two options and will give the output accordingly.
+
+errors:
+If the user enters any invalid command then it will show the error.
+If the user enters more or less no. of required arguments in command the it will show invalid no. of arguments.
+I have also handled the error if the fork() call fails.
